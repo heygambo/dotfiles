@@ -32,6 +32,7 @@ brew cask install postman
 brew cask install psequel
 brew cask install sequel-pro
 brew cask install tower
+brew cask install visual-studio-code
 
 # organize
 brew cask install evernote
