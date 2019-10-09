@@ -1,0 +1,145 @@
+{
+  // VS Code
+  "editor.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Inconsolata, Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/node_modules": false
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/node_modules": true,
+  },
+  "search.location": "sidebar",
+  "search.useIgnoreFiles": false,
+  "terminal.integrated.scrollback": 10000,
+  "workbench.colorTheme": "SynthWave '84",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#616161",
+    "list.activeSelectionForeground": "#616161",
+    "list.inactiveSelectionForeground": "#616161",
+    "list.highlightForeground": "#616161",
+    "scrollbarSlider.activeBackground": "#61616150",
+    "editorSuggestWidget.highlightForeground": "#616161",
+    "textLink.foreground": "#616161",
+    "progressBar.background": "#616161",
+    "pickerGroup.foreground": "#616161",
+    "tab.activeBorder": "#616161"
+  },
+  "workbench.settings.editor": "json",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.fontAliasing": "default",
+  "window.zoomLevel": 0,
+  // Languages
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Extensions
+  "carbon.fontSize": 12,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "local-history.daysLimit": 0,
+  "local-history.absolute": true,
+  "local-history.path": "/Users/gambo/Dropbox/Developer/VSCodeHistory",
+  "local-history.saveDelay": 3,
+  "mocha-snippets.function-type": "arrow",
+  "mocha-snippets.glob": "**/*.spec.ts",
+  "mocha-snippets.quote-type": "single",
+  "mocha-snippets.semicolon": false,
+  "vscode_custom_css.imports": [
+    "file:///Users/gambo/.vscode/extensions/robbowen.synthwave-vscode-0.0.7/synthwave84.css"
+  ],
+  "sortier.onSave": false,
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "breadcrumbs.enabled": true,
+  "liveshare.featureSet": "insiders",
+  "gitProjectManager.baseProjectsFolders": [
+    "/Users/gambo/Code/fanmio"
+  ],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false
+}
+
