@@ -28,6 +28,16 @@ brew install hub
 # mtr - ping & traceroute. best.
 brew install mtr
 
+brew install fd
+brew install htop
+brew install watch
+brew install youtube-dl
+
+# langauges
+brew install rbenv
+brew install ruby-build
+
+
 # allow mtr to run without sudo
 mtrlocation=$(brew info mtr | grep Cellar | sed -e 's/ (.*//') #  e.g. `/Users/paulirish/.homebrew/Cellar/mtr/0.86`
 sudo chmod 4755 $mtrlocation/sbin/mtr
@@ -43,6 +53,14 @@ brew install tree
 brew install ffmpeg --with-libvpx
 
 brew install ncdu # find where your diskspace went
+
+# cloud tools
+brew install google-cloud-sdk
+brew install awscli
+brew install terraform
+brew install kubernetes-helm
+
+brew install themekit
 
 # Remove outdated versions from the cellar
 brew cleanup
