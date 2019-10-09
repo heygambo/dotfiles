@@ -1,0 +1,47 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+alias 'l=ls'
+alias 'la=ls -A'
+alias 'll=ls -l'
+alias 'lq=ls -Q'
+alias 'lr=ls -R'
+alias 'lrs=ls -lrS'
+alias 'lrt=ls -lrt'
+alias 'lrta=ls -lrtA'
+alias 'lrth=ls -lrth'
+alias 'lrtha=ls -lrthA'
+alias 'j=jobs -l'
+alias 'tf=tail -F'
+alias 'z=fasd_cd'
+alias 'grep=grep --colour'
+alias 'vnice=nice -n 20 ionice -c 3'
+alias "tree=tree -A -I 'CVS|*~'"
+
+# Play safe!
+alias 'rm=rm -i'
+alias 'mv=mv -i'
+alias 'cp=cp -i'
+
+# For convenience
+alias 'mkdir=mkdir -p'
+alias 'dus=du -ms * | sort -n'
+
+# Put this in your .zshrc or .bashrc file
+# Install `tree` first — brew install tree
+function t() {
+  # Defaults to 3 levels deep, do more with `t 5` or `t 1`
+  # pass additional args after
+  tree -I '.git|node_modules|bower_components|.DS_Store' --dirsfirst --filelimit 100 -L ${1:-3} -aC $2
+}
+
