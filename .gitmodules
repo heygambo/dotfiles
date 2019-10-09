@@ -7,3 +7,6 @@
 [submodule "submodules/ThinkVim"]
 	path = submodules/ThinkVim
 	url = https://github.com/hardcoreplayers/ThinkVim.git
+[submodule "submodules/macOS-Defaults"]
+	path = submodules/macOS-Defaults
+	url = https://github.com/kevinSuttle/macOS-Defaults
