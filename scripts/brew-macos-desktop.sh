@@ -18,6 +18,7 @@ brew cask install twitch
 brew cask install avira-antivirus
 brew cask install flickr-uploadr
 brew cask install nordvpn
+brew cask install istat-menus
 
 # dev
 brew cask install iterm2
