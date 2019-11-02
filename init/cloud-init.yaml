@@ -1,0 +1,69 @@
+#cloud-config
+packages:
+  - apt-transport-https
+  - apt-utils
+  - build-essential
+  - ca-certificates
+  - curl
+  - gcc
+  - git
+  - htop
+  - iputils-ping
+  - jq
+  - less
+  - libevent-dev
+  - libjansson-dev
+  - libncurses5-dev
+  - libseccomp-dev
+  - libssl-dev
+  - libxml2-dev
+  - libyaml-dev
+  - locales
+  - make
+  - nano
+  - net-tools
+  - netcat-openbsd
+  - pkg-config autoconf automake
+  - python3-docutils
+  - silversearcher-ag
+  - socat
+  - software-properties-common
+  - tmux
+  - wget
+  - zsh
+
+package_upgrade: true
+
+users:
+  - name: gambo
+    ssh-authorized-keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDJlD49paEl8BND3f4F+wdcwiZGNWcwUUPir1EfUWCbP6EAG0AiKTHYQHMZAus/DfuXR6ICyS3EQlaxmTOxGU1ccD5FnA1RpueiLKFixOUVB80S5Vemt9iQJ6ioVHgu76yU+FNTQVR8aF1+kxZ+oYtqQpgVBBeht30RjBAUbsdrXo7752C5jaTNbxFfK9huyDnkzDkMvplARSVDUQ0ktZdawV7Z8d53Z7mmFjr2Iyy+D6XglJ0Wqi7lrMWp5tCwmzJFm9RSXR0qAeQK8Igx+RT3TEWWMUoBMqQQ7R1rkPi3T0ogvQTLw+zXlzHR/UeKVH+R6GXQVp8LKsnYi3BwyRVr4cuo6Bg2EV6U/iEQZFpjxi5qGEAy1sxPf7B8swmr/VecdhvgXJbnWGt2oORFsdofSdBORScS8e8WBiKRAu0P2jBg/Ze/eX+XrKSVWWwwEDEzNv01Wi2FAZ+irFKGJu2YPx3Wn7Rhl/+WdJxBYLKujEjF2gRdQLikqNIPRdeaCX21E9EcLF3EzabvUDoBk5NA9vpBeH7egB2QBjbDJ58pXcwGw98EeFwlHIWNZcWhJmRWQAv/ieLptANJGlUQMbW3OQT0uWKFkkGh5QK4IMP6xJ/4NMHJP24dqWcUlXKBmu5bvUF+tyMR/E2st63yu7hAyhsUh6UAuKdbsU432Cv/rw== christian.gambardella@gmail.com"
+    sudo:
+      - ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    # shell: /usr/bin/zsh
+  - name: linuxbrew
+    sudo:
+      - ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    shell: /usr/bin/zsh
+
+runcmd:
+  # Authentication
+  - export ROOT_PASSWD=$(date +%s | sha256sum | base64 | head -c 32)
+  - echo "Your password is $ROOT_PASSWD" > /home/gambo/burn-after-reading.txt
+  - echo $ROOT_PASSWD | passwd --stdin gambo
+  # - sed -i -e '/^Port/s/^.*$/Port 4444/' /etc/ssh/sshd_config
+  - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
+  - sed -i -e '$aAllowUsers gambo' /etc/ssh/sshd_config
+  - service sshd restart
+
+  # Linuxbrew
+  - git clone https://github.com/Homebrew/brew /home/linuxbrew/.linuxbrew/Homebrew
+  - mkdir /home/linuxbrew/.linuxbrew/bin
+  - ln -s ../Homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin/
+  - export PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH
+  - brew config
+  - brew install bzip2 openssl readline wtfutil ripgrep ruby neovim
+
+final_message: "The system is finally up, after $UPTIME seconds"
