@@ -19,6 +19,7 @@ brew cask install avira-antivirus
 brew cask install flickr-uploadr
 brew cask install nordvpn
 brew cask install istat-menus
+brew cask install overkill
 
 # dev
 brew cask install iterm2
@@ -79,7 +80,7 @@ brew cask install avibrazil-rdm
 brew cask install teamviewer
 brew cask install the-unarchiver
 
-brew tap caskroom/fonts 
+brew tap caskroom/fonts
 brew cask install font-fira-code
 
 # Not on cask but I want regardless.
