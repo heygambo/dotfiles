@@ -79,6 +79,7 @@ brew cask install name-mangler
 brew cask install avibrazil-rdm
 brew cask install teamviewer
 brew cask install the-unarchiver
+brew cask install charles
 
 brew tap caskroom/fonts
 brew cask install font-fira-code
