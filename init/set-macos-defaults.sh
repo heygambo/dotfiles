@@ -120,6 +120,14 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disables transparent menu bar.
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+
+# Disables beeping
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
+defaults write NSGlobalDomain com.apple.sound.beep.flash -bool false
+defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0
+
 # Set a custom wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 #rm -rf ~/Library/Application Support/Dock/desktoppicture.db
@@ -179,13 +187,16 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Set a blazing fast mouse tracking speed
-defaults write -g com.apple.mouse.scaling 20.0
+defaults write NSGlobalDomain com.apple.mouse.scaling -float 7.0
+
+# Set Keybaord FN state on
+defaults write NSGlobalDomain com.apple.keybaord.fnState -bool true
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en" "nl"
-defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=EUR"
+defaults write NSGlobalDomain AppleLanguages -array "de" "en"
+defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
@@ -193,10 +204,46 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
+sudo systemsetup -settimezone "Europe/Berlin" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+
+# MultiTouch Mouse settings
+defaults write com.apple.AppleMultitouchMouse MouseButtonDivision  -int 55
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string TwoButton
+defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -bool 1
+defaults write com.apple.AppleMultitouchMouse MouseMomentumScroll -bool 1
+defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 1
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -bool true
+defaults write com.apple.AppleMultitouchMouse UserPreferences -bool true
+
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonDivision  -int 55
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string TwoButton
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizontalScroll -bool 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseMomentumScroll -bool 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseVerticalScroll -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse UserPreferences -bool true
+
+# Disables Siri
+defaults write com.apple.Siri StatusMenuVisible -bool false
+defaults write com.apple.Siri VoiceTriggerUserEnabled -bool false
+
+
+###############################################################################
+# Accessibility                                                               #
+###############################################################################
+
+# Enables Accessibility
+defaults write com.apple.Accessibility AccessibilityEnabled -bool 1
+
+# Enables checkboxes, radio buttons, etc to be selectable by pressing tab
+defaults write com.apple.Accessibility FullKeyboardAccessFocusRingEnabled -bool 1
 
 ###############################################################################
 # Screen                                                                      #
@@ -389,7 +436,7 @@ defaults write com.apple.dock mru-spaces -bool false
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.5
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -664,8 +711,13 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 # Install the Solarized Dark theme for iTerm
 open "${HOME}/init/Solarized Dark.itermcolors"
 
+# iTerm2
+
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+
+
 
 ###############################################################################
 # Time Machine                                                                #
