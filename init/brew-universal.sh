@@ -14,7 +14,7 @@ brew install moreutils
 brew install findutils
 
 # GNU `sed`, overwriting the built-in `sed`
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install wget with IRI support
 brew install wget --with-iri
@@ -55,12 +55,12 @@ brew install ffmpeg --with-libvpx
 brew install ncdu # find where your diskspace went
 
 # cloud tools
-brew install google-cloud-sdk
+brew cask install google-cloud-sdk
 brew install awscli
 brew install terraform
 brew install kubernetes-helm
 
-brew install themekit
+brew cask install themekit
 
 # Remove outdated versions from the cellar
 brew cleanup
