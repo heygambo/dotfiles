@@ -20,7 +20,7 @@ brew install gnu-sed --with-default-names
 brew install wget --with-iri
 
 # Install more recent versions of some OS Xtools
-brew install neovim --with-override-system-vi
+brew install neovim
 
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
@@ -47,7 +47,7 @@ sudo chown root $mtrlocation/sbin/mtr
 brew install the_silver_searcher
 brew install fzf
 
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install rename
 brew install tree
 brew install ffmpeg --with-libvpx
