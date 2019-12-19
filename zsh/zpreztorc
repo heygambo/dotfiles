@@ -30,18 +30,19 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
+  'docker' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
   'completion' \
   'prompt' \
-  'syntax-highlighting' \
   'fasd' \
   'docker' \
   'git' \
   'node' \
   'tmux' \
+  'homebrew' \
 
 # disabled
 # 'autosuggestions' \
@@ -231,4 +232,3 @@ zstyle ':prezto:module:tmux:session' name 'heygambo'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
-

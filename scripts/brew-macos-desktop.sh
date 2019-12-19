@@ -19,6 +19,9 @@ brew cask install istat-menus
 brew cask install overkill
 
 # dev
+
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 brew cask install iterm2
 brew cask install imagealpha
 brew cask install imageoptim

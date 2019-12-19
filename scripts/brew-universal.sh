@@ -19,7 +19,10 @@ brew install gnu-sed
 # Install wget with IRI support
 brew install wget --with-iri
 
-# Install more recent versions of some OS Xtools
+# ThinkVim dependency
+brew install ripgrep
+
+# neovim
 brew install neovim
 
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
@@ -46,6 +49,7 @@ sudo chown root $mtrlocation/sbin/mtr
 # Install other useful binaries
 brew install the_silver_searcher
 brew install fzf
+brew install fasd
 
 brew install imagemagick
 brew install rename
@@ -64,4 +68,3 @@ brew cask install themekit
 
 # Remove outdated versions from the cellar
 brew cleanup
-
