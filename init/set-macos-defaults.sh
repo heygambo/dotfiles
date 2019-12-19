@@ -183,14 +183,14 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Set a blazing fast mouse tracking speed
 defaults write NSGlobalDomain com.apple.mouse.scaling -float 7.0
 
 # Set Keybaord FN state on
-defaults write NSGlobalDomain com.apple.keybaord.fnState -bool true
+defaults write NSGlobalDomain com.apple.keybaord.fnState -bool false
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -396,6 +396,9 @@ defaults write com.apple.dock tilesize -int 36
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
+
+# Makes icons larger on mouse over
+defaults write com.apple.dock largesize -int 90
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
