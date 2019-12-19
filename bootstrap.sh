@@ -53,13 +53,8 @@ cp $HOME/.dotfiles/submodules/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 # symlink thinkvim
 ln -s -f $HOME/.dotfiles/submodules/ThinkVim $HOME/.config/nvim
 
-# installs nvm
-if test -d "$HOME/.nvm"
-then
-    echo "nvm is already installed... skipping."
-else
-    echo "Installing nvm"
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-fi
-source $HOME/.zprofile
-nvm install 10
+# Installs node through nvm
+./scripts/node.sh
+
+# Installs yarn and a bunch of global packages
+./scripts/yarn.sh

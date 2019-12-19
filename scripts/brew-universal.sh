@@ -39,7 +39,7 @@ brew install youtube-dl
 # langauges
 brew install rbenv
 brew install ruby-build
-
+brew install yarn --ignore-dependencies
 
 # allow mtr to run without sudo
 mtrlocation=$(brew info mtr | grep Cellar | sed -e 's/ (.*//') #  e.g. `/Users/paulirish/.homebrew/Cellar/mtr/0.86`
