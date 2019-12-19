@@ -3,9 +3,6 @@
 # to maintain cask ....
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
-# Install native apps
-brew install caskroom/cask/brew-cask
-
 # daily
 brew cask install dropbox
 brew cask install gyazo
@@ -25,7 +22,7 @@ brew cask install overkill
 brew cask install iterm2
 brew cask install imagealpha
 brew cask install imageoptim
-brew cask install docker-compose
+brew install docker-compose
 brew cask install docker
 brew cask install cyberduck
 brew cask install gitify
@@ -40,7 +37,6 @@ brew cask install visual-studio-code
 brew cask install evernote
 
 # social
-brew cask install limechat
 brew cask install discord
 brew cask install riot
 brew cask install signal
@@ -48,11 +44,10 @@ brew cask install slack
 brew cask install telegram
 
 # browsers
-brew cask install google-chrome-canary
-brew cask install firefoxnightly
-brew cask install webkit-nightly
+brew cask install google-chrome
+brew cask install firefox
 brew cask install chromium
-brew cask install torbrowser
+brew cask install tor-browser
 
 # design
 brew cask install balsamiq-mockups
@@ -80,9 +75,8 @@ brew cask install avibrazil-rdm
 brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install charles
-brew cask install daisydisk
 
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
 # Not on cask but I want regardless.

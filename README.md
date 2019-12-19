@@ -14,3 +14,6 @@ The current plan is to use Homebrew on the mac and linuxbrew on linux
 
 ThinkVim needs a few requirements. Read the [ThinkVim Readme](https://github.com/hardcoreplayers/ThinkVim)
 
+## Thanks to other Dotfiles
+
+- https://github.com/adityarpillai/jumpstart
