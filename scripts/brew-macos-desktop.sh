@@ -19,7 +19,6 @@ brew cask install istat-menus
 brew cask install overkill
 
 # dev
-
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 brew cask install iterm2
@@ -35,6 +34,8 @@ brew cask install psequel
 brew cask install sequel-pro
 brew cask install tower
 brew cask install visual-studio-code
+brew install TomAnthony/brews/itermocil
+mkdir ~/.itermocil
 
 # organize
 brew cask install evernote
