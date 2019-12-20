@@ -61,6 +61,9 @@ brew install ncdu # find where your diskspace went
 
 # cloud tools
 brew cask install google-cloud-sdk
+gcloud -q components update
+gcloud -q components install alpha beta kubectl docker-credential-gcr
+
 brew install awscli
 brew install terraform
 brew install kubernetes-helm
