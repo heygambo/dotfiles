@@ -50,6 +50,7 @@ sudo chown root $mtrlocation/sbin/mtr
 brew install the_silver_searcher
 brew install fzf
 brew install fasd
+brew install cask ngrok
 
 brew install imagemagick
 brew install rename
