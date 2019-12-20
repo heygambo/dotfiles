@@ -14,6 +14,19 @@ The current plan is to use Homebrew on the mac and linuxbrew on linux
 
 ThinkVim needs a few requirements. Read the [ThinkVim Readme](https://github.com/hardcoreplayers/ThinkVim)
 
-## Thanks to other Dotfiles
+## Thanks
 
-- https://github.com/adityarpillai/jumpstart
+### Aditya Pillai
+
+Your jumpstart repo gave me some ideas how to start my dotfiles.
+https://github.com/adityarpillai/jumpstart
+
+### Sorin Ionescu
+
+I'm using prezto for years already. It's awesome.
+https://github.com/sorin-ionescu/prezto
+
+### taigacute
+
+Thank for making ThinkVim. I'm giving vim another try.
+https://github.com/hardcoreplayers/ThinkVim
