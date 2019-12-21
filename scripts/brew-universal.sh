@@ -68,7 +68,8 @@ brew install awscli
 brew install terraform
 brew install kubernetes-helm
 
-brew cask install themekit
+brew tap shopify/shopify
+brew install themekit
 
 # Remove outdated versions from the cellar
 brew cleanup
