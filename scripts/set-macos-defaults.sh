@@ -609,7 +609,7 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
 # Disables Spotlight
-sudo mdutil -a -i off
+# sudo mdutil -a -i on
 # Change indexing order and disable some search results
 # Yosemite-specific search results (remove them if you are using macOS 10.9 or older):
 # 	MENU_DEFINITION
@@ -951,6 +951,17 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 ###############################################################################
 # Tweetbot.app                                                                #
 ###############################################################################
+
+# Bypass the annoyingly slow t.co URL shortener
+defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
+
+###############################################################################
+# Sets up SSH Agent                                                           #
+###############################################################################
+
+mkdir -p ~/.ssh
+ln -s ./ssh/config ~/.ssh/config
+ssh-add -K ~/.ssh/id_rsa
 
 # Bypass the annoyingly slow t.co URL shortener
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
