@@ -38,7 +38,6 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'fasd' \
-  'docker' \
   'git' \
   'node' \
   'tmux' \
