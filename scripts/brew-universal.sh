@@ -25,6 +25,9 @@ brew install ripgrep
 # neovim
 brew install neovim
 
+# git flow
+brew install git-flow
+
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
 
