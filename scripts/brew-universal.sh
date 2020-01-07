@@ -62,6 +62,9 @@ brew install ffmpeg --with-libvpx
 
 brew install ncdu # find where your diskspace went
 
+# tools
+brew install p7zip
+
 # cloud tools
 brew cask install google-cloud-sdk
 gcloud -q components update

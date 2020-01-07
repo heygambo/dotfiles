@@ -78,6 +78,7 @@ brew cask install name-mangler
 brew cask install avibrazil-rdm
 brew cask install teamviewer
 brew cask install the-unarchiver
+brew cask install keka
 brew cask install charles
 brew cask install daisydisk
 
