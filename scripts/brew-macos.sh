@@ -15,6 +15,5 @@ brew install tmux
 
 # ThinkVim dependencies
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-brew install bat
 
 brew cleanup

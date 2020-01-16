@@ -22,11 +22,17 @@ brew install wget --with-iri
 # ThinkVim dependency
 brew install ripgrep
 
+# Like cat but with syntax highlighting
+brew install bat
+
 # neovim
 brew install neovim
 
 # git flow
 brew install git-flow
+
+# interactive git terminal client
+brew install tig
 
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
@@ -64,6 +70,12 @@ brew install ncdu # find where your diskspace went
 
 # tools
 brew install p7zip
+
+# A lightweight and flexible command-line JSON processor.
+brew install jq
+
+# A modern replacement for ls
+brew install exa
 
 # cloud tools
 brew cask install google-cloud-sdk

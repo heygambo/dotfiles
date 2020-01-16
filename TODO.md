@@ -1,17 +1,12 @@
 # Todo
 
-## Universal
+## universal
 
-- zsh
-- prezto
-- script to symlink everything
+- https://github.com/wfxr/forgit
+- https://github.com/jonas/tig
 
 ## ubuntu
 
 - install neovim
 - install universal-ctags/universal-ctags
 - install rimraf
-
-## macOS
-
-- Brewfile
