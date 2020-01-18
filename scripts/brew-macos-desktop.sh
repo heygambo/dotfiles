@@ -67,6 +67,7 @@ brew cask install epic-games
 
 # less often
 brew cask install disk-inventory-x
+brew cask install skitch
 brew cask install screenflow
 brew cask install vlc
 brew cask install gpg-tools
