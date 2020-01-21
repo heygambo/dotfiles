@@ -37,6 +37,9 @@ brew cask install visual-studio-code
 brew install TomAnthony/brews/itermocil
 mkdir ~/.itermocil
 
+# networking
+brew cask install little-snitch
+
 # organize
 brew cask install evernote
 
