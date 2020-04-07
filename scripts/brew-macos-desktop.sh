@@ -85,6 +85,7 @@ brew cask install the-unarchiver
 brew cask install keka
 brew cask install charles
 brew cask install daisydisk
+brew cask install handbrake
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
