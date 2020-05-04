@@ -17,6 +17,7 @@ brew cask install flickr-uploadr
 brew cask install nordvpn
 brew cask install istat-menus
 brew cask install overkill
+brew cask install time-out
 
 # dev
 brew tap homebrew/cask-fonts
@@ -32,6 +33,7 @@ brew cask install insomnia
 brew cask install postman
 brew cask install psequel
 brew cask install sequel-pro
+brew cask install db-browser-for-sqlite
 brew cask install tower
 brew cask install visual-studio-code
 brew install TomAnthony/brews/itermocil
@@ -86,6 +88,7 @@ brew cask install keka
 brew cask install charles
 brew cask install daisydisk
 brew cask install handbrake
+brew cask install balenaetcher
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
