@@ -68,6 +68,7 @@ brew cask install grammarly
 
 # productivity
 brew cask install cheatsheet
+echo "No cask available for vimac: https://vimacapp.com/"
 
 # games
 brew cask install steam
