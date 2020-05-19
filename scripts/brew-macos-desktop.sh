@@ -66,6 +66,9 @@ brew cask install skyfonts
 # writing
 brew cask install grammarly
 
+# productivity
+brew cask install cheatsheet
+
 # games
 brew cask install steam
 brew cask install epic-games
