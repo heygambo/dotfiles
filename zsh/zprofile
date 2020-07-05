@@ -71,4 +71,3 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # pip
 export PATH="$HOME/.local/bin:$PATH"
-
