@@ -12,6 +12,7 @@ brew install terminal-notifier
 brew install itermocil
 brew install mosh
 brew install tmux
+brew install m-cli
 
 # ThinkVim dependencies
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
