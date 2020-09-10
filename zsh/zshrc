@@ -13,16 +13,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias 'l=ls'
-alias 'la=ls -A'
-alias 'll=ls -l'
-alias 'lq=ls -Q'
-alias 'lr=ls -R'
-alias 'lrs=ls -lrS'
-alias 'lrt=ls -lrt'
-alias 'lrta=ls -lrtA'
-alias 'lrth=ls -lrth'
-alias 'lrtha=ls -lrthA'
+alias 'l=lsd'
+alias 'la=lsd -A'
+alias 'll=lsd -l'
+alias 'lq=lsd -Q'
+alias 'lr=lsd -R'
+alias 'lrs=lsd -lrS'
+alias 'lrt=lsd -lrt'
+alias 'lrta=lsd -lrtA'
+alias 'lrth=lsd -lrth'
+alias 'lrtha=lsd -lrthA'
 alias 'j=jobs -l'
 alias 'tf=tail -F'
 alias 'z=fasd_cd'
@@ -58,3 +58,9 @@ eval "$(rbenv init -)"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+# MAGIC_ENTER_OTHER_COMMAND='clear && lsd -lha | lolcat -S 1 -F 0.04'
+MAGIC_ENTER_OTHER_COMMAND='clear && lsd -lha'
+MAGIC_ENTER_GIT_COMMAND="clear && git status | lolcat -S 1 -F 0.04"
+[ -f ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh ] && source ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh
+

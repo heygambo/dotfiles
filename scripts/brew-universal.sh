@@ -37,6 +37,10 @@ brew install tig
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
 
+# lolcat and lsd - makes terminal gradiants
+brew install lolcat
+brew install lsd
+
 # mtr - ping & traceroute. best.
 brew install mtr
 
