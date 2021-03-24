@@ -63,4 +63,5 @@ eval "$(rbenv init -)"
 MAGIC_ENTER_OTHER_COMMAND='clear && lsd -lha'
 MAGIC_ENTER_GIT_COMMAND="clear && git status | lolcat -S 1 -F 0.04"
 [ -f ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh ] && source ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh
+source ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh
 
