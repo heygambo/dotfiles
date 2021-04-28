@@ -22,3 +22,9 @@ yes | yarn global add npm-check-updates
 
 echo "Install trash-cli...";
 yes | yarn global add trash-cli
+
+echo "Install typescript...";
+yes | yarn global add typescript
+
+echo "Install typescript-language-server...";
+yes | yarn global add typescript-language-server
