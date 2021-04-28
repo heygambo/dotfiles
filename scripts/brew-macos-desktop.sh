@@ -22,6 +22,7 @@ brew cask install time-out
 # dev
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
+brew cask install alacritty
 brew cask install iterm2
 brew cask install imagealpha
 brew cask install imageoptim
