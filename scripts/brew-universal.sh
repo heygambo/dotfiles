@@ -84,7 +84,7 @@ brew install jq
 brew install exa
 
 # cloud tools
-brew cask install google-cloud-sdk
+brew install --cask google-cloud-sdk
 gcloud -q components update
 gcloud -q components install alpha beta kubectl docker-credential-gcr
 

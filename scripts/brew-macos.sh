@@ -14,7 +14,10 @@ brew install mosh
 brew install tmux
 brew install m-cli
 
+brew tap jason0x43/homebrew-neovim-nightly
+brew install --cask neovim-nightly
+
 # ThinkVim dependencies
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+# brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 brew cleanup

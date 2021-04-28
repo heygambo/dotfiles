@@ -4,99 +4,99 @@
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 # daily
-brew cask install dropbox
-brew cask install gyazo
-brew cask install 1password
-brew cask install rescuetime
-brew cask install spotify
-brew cask install alfred
-brew cask install zoomus
-brew cask install twitch
-brew cask install avira-antivirus
-brew cask install flickr-uploadr
-brew cask install nordvpn
-brew cask install istat-menus
-brew cask install overkill
-brew cask install time-out
+brew install --cask dropbox
+brew install --cask gyazo
+brew install --cask 1password
+brew install --cask rescuetime
+brew install --cask spotify
+brew install --cask alfred
+brew install --cask zoomus
+brew install --cask twitch
+brew install --cask avira-antivirus
+brew install --cask flickr-uploadr
+brew install --cask nordvpn
+brew install --cask istat-menus
+brew install --cask overkill
+brew install --cask time-out
 
 # dev
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
-brew cask install alacritty
-brew cask install iterm2
-brew cask install imagealpha
-brew cask install imageoptim
+brew install --cask font-hack-nerd-font
+brew install --cask alacritty
+brew install --cask iterm2
+brew install --cask imagealpha
+brew install --cask imageoptim
 brew install docker-compose
-brew cask install docker
-brew cask install cyberduck
-brew cask install gitify
-brew cask install insomnia
-brew cask install postman
-brew cask install psequel
-brew cask install sequel-pro
-brew cask install db-browser-for-sqlite
-brew cask install tower
-brew cask install visual-studio-code
+brew install --cask docker
+brew install --cask cyberduck
+brew install --cask gitify
+brew install --cask insomnia
+brew install --cask postman
+brew install --cask psequel
+brew install --cask sequel-pro
+brew install --cask db-browser-for-sqlite
+brew install --cask tower
+brew install --cask visual-studio-code
 brew install TomAnthony/brews/itermocil
 mkdir ~/.itermocil
 
 # networking
-brew cask install little-snitch
+brew install --cask little-snitch
 
 # organize
-brew cask install evernote
+brew install --cask evernote
 
 # social
-brew cask install discord
-brew cask install riot
-brew cask install signal
-brew cask install slack
-brew cask install telegram
+brew install --cask discord
+brew install --cask riot
+brew install --cask signal
+brew install --cask slack
+brew install --cask telegram
 
 # browsers
-brew cask install google-chrome
-brew cask install firefox
-brew cask install chromium
-brew cask install tor-browser
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask chromium
+brew install --cask tor-browser
 
 # design
-brew cask install balsamiq-mockups
-brew cask install xscope
-brew cask install skyfonts
+brew install --cask balsamiq-mockups
+brew install --cask xscope
+brew install --cask skyfonts
 
 # writing
-brew cask install grammarly
+brew install --cask grammarly
 
 # productivity
-brew cask install cheatsheet
+brew install --cask cheatsheet
 echo "No cask available for vimac: https://vimacapp.com/"
 
 # games
-brew cask install steam
-brew cask install epic-games
+brew install --cask steam
+brew install --cask epic-games
 
 # less often
-brew cask install disk-inventory-x
-brew cask install skitch
-brew cask install screenflow
-brew cask install vlc
-brew cask install gpg-tools
-brew cask install licecap
-brew cask install air-video-server-hd
-brew cask install keycastr
-brew cask install kindle
-brew cask install name-mangler
-brew cask install avibrazil-rdm
-brew cask install teamviewer
-brew cask install the-unarchiver
-brew cask install keka
-brew cask install charles
-brew cask install daisydisk
-brew cask install handbrake
-brew cask install balenaetcher
+brew install --cask disk-inventory-x
+brew install --cask skitch
+brew install --cask screenflow
+brew install --cask vlc
+brew install --cask gpg-tools
+brew install --cask licecap
+brew install --cask air-video-server-hd
+brew install --cask keycastr
+brew install --cask kindle
+brew install --cask name-mangler
+brew install --cask avibrazil-rdm
+brew install --cask teamviewer
+brew install --cask the-unarchiver
+brew install --cask keka
+brew install --cask charles
+brew install --cask daisydisk
+brew install --cask handbrake
+brew install --cask balenaetcher
 
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 # Not on cask but I want regardless.
 
