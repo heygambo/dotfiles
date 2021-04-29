@@ -58,3 +58,6 @@ ln -s -f $HOME/.dotfiles/submodules/ThinkVim $HOME/.config/nvim
 
 # Installs yarn and a bunch of global packages
 ./scripts/yarn.sh
+
+# Symlinks alacritty config
+./scripts/alacritty.sh
