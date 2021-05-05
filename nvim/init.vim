@@ -106,7 +106,7 @@ nnoremap <leader>sf <cmd>Telescope file_browser<cr>
 nnoremap <leader>ss <cmd>Telescope live_grep<cr>
 nnoremap <leader>sb <cmd>Telescope buffers<cr>
 
-nnoremap <leader>nt <cmd>NERDTreeFind<cr>
+nnoremap <leader>nt <cmd>NERDTreeToggle<cr>
 nnoremap <leader>nf <cmd>NERDTreeFind<cr>
 
 inoremap <silent><expr> <C-Space> compe#complete()
