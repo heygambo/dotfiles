@@ -97,9 +97,28 @@ hi LspDiagnosticsVirtualTextHint guifg=green gui=bold
 
 let mapleader = " "
 
+nnoremap <F2> <cmd>ALERename<cr>
+nnoremap <F12> <cmd>ALEGoToDefinition<cr>
+vnoremap <F5> <cmd>'<,'>sort<cr>
+
 nnoremap <leader>sg <cmd>Telescope git_files<cr>
 nnoremap <leader>sf <cmd>Telescope file_browser<cr>
 nnoremap <leader>ss <cmd>Telescope live_grep<cr>
 nnoremap <leader>sb <cmd>Telescope buffers<cr>
+
+nnoremap <leader>nt <cmd>NERDTreeFind<cr>
+nnoremap <leader>nf <cmd>NERDTreeFind<cr>
+
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+
+nnoremap <leader>w <cmd>bd<cr>
+nnoremap <leader>; <cmd>e ~/.config/nvim/init.vim<cr>
+
+" makes it possible to do cmd up and down to move lines
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
