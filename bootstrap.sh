@@ -53,6 +53,9 @@ cp $HOME/.dotfiles/submodules/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 # symlink thinkvim
 ln -s -f $HOME/.dotfiles/submodules/ThinkVim $HOME/.config/nvim
 
+# Installs rust through rustup
+./scripts/rustup.sh
+
 # Installs node through nvm
 ./scripts/node.sh
 
