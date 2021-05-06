@@ -26,6 +26,7 @@ set clipboard=unnamed
 set mouse=nicr
 set mouse=a
 
+let g:python_host_prog='/usr/bin/python'
 
 call plug#begin('~/.vim/plugged')
 
@@ -33,16 +34,19 @@ call plug#begin('~/.vim/plugged')
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mhinz/vim-startify'
+Plug 'junegunn/vim-emoji'
 " Plug 'bagrat/vim-buffet'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ap/vim-css-color'
+Plug 'severin-lemaignan/vim-minimap'
 
 "{{ File management }}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 
@@ -53,6 +57,12 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'hrsh7th/nvim-compe'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'dense-analysis/ale', { 'do': 'yarn global add eslint_d' }
+
+"{{ Editing }}
+Plug 'elzr/vim-json'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
@@ -80,9 +90,6 @@ let g:lightline = {
       \ },
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ 'enable': {
-      \   'tabline': 0
       \ }
       \ }
 
@@ -132,6 +139,20 @@ hi LspDiagnosticsVirtualTextHint guifg=green gui=bold
 
 let g:neovide_cursor_vfx_mode = "railgun"
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Uncomment to autostart the NERDTree
+" autocmd vimenter * NERDTree
+map <C-f> :NERDTreeFind<CR>
+map <C-n> :NERDTreeToggle<CR>
+
+let g:NERDTreeDirArrowExpandable = '►'
+let g:NERDTreeDirArrowCollapsible = '▼'
+let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI = 1
+let g:NERDTreeWinSize=38
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
@@ -146,8 +167,6 @@ nnoremap <leader>sg <cmd>Telescope git_files<cr>
 nnoremap <leader>sf <cmd>Telescope file_browser<cr>
 nnoremap <leader>sl <cmd>Telescope live_grep<cr>
 nnoremap <leader>sb <cmd>Telescope buffers<cr>
-nnoremap <leader>nn <cmd>NERDTreeToggle<cr>
-nnoremap <leader>nf <cmd>NERDTreeFind<cr>
 
 "{{ Language Server / Autocomplete }}
 nnoremap <F2> <cmd>ALERename<cr>
@@ -204,3 +223,15 @@ map <Leader>tk <C-w>t<C-w>K
 " Removes pipes | that act as seperators on splits
 set fillchars+=vert:\ 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-emoji
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if emoji#available()
+  let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+  let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+  let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+  let g:gitgutter_sign_modified_removed = emoji#for('collision')
+endif
+
+set completefunc=emoji#complete
