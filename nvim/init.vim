@@ -1,3 +1,8 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
+set encoding=UTF-8
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 set expandtab
@@ -11,26 +16,44 @@ set scrolloff=10
 set noswapfile
 set nobackup
 set nohlsearch
+set incsearch
 set completeopt=menuone,noselect
+set clipboard=unnamed
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Mouse Scrolling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set mouse=nicr
+set mouse=a
+
 
 call plug#begin('~/.vim/plugged')
+
+"{{ Look & Feel }}
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'mhinz/vim-startify'
+" Plug 'bagrat/vim-buffet'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'ap/vim-css-color'
+
+"{{ File management }}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-" Plug 'neovim/nvim-lspconfig'
-Plug 'neovim/nvim-lspconfig', { 'do': 'yarn global add typescript typescript-language-server vls' }
-Plug 'hrsh7th/nvim-compe'
-Plug 'ghifarit53/tokyonight-vim'
-Plug 'phaazon/hop.nvim'
-Plug 'itchyny/lightline.vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
+
+"{{ Language Server / Autocomplete }}
+Plug 'neovim/nvim-lspconfig', { 'do': 'yarn global add typescript typescript-language-server vls' }
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
-" Plug 'dense-analysis/ale'
+Plug 'hrsh7th/nvim-compe'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'dense-analysis/ale', { 'do': 'yarn global add eslint_d' }
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'preservim/nerdtree'
+
 call plug#end()
 
 lua <<EOF
@@ -47,6 +70,8 @@ let g:tokyonight_enable_italic = 1
 
 colorscheme tokyonight
 
+" Always show statusline
+set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'tokyonight',
       \ 'active': {
@@ -56,14 +81,24 @@ let g:lightline = {
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead'
       \ },
+      \ 'enable': {
+      \   'tabline': 0
+      \ }
       \ }
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ALE
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_javascript_eslint_use_global = 1
 let g:ale_javascript_eslint_executable = 'eslint_d'
 let g:ale_fixers = {
 \   '*': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Compe
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:compe = {}
 let g:compe.enabled = v:true
@@ -95,30 +130,77 @@ hi LspDiagnosticsVirtualTextWarning guifg=orange gui=bold
 hi LspDiagnosticsVirtualTextInformation guifg=yellow gui=bold
 hi LspDiagnosticsVirtualTextHint guifg=green gui=bold
 
+let g:neovide_cursor_vfx_mode = "railgun"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Remap Keys
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = " "
 
+" Remap ESC to ii
+:imap ii <Esc>
+
+"{{ File management }}
+nnoremap <leader>sg <cmd>Telescope git_files<cr>
+nnoremap <leader>sf <cmd>Telescope file_browser<cr>
+nnoremap <leader>sl <cmd>Telescope live_grep<cr>
+nnoremap <leader>sb <cmd>Telescope buffers<cr>
+nnoremap <leader>nn <cmd>NERDTreeToggle<cr>
+nnoremap <leader>nf <cmd>NERDTreeFind<cr>
+
+"{{ Language Server / Autocomplete }}
 nnoremap <F2> <cmd>ALERename<cr>
 nnoremap <F12> <cmd>ALEGoToDefinition<cr>
 vnoremap <F5> <cmd>'<,'>sort<cr>
 
-nnoremap <leader>sg <cmd>Telescope git_files<cr>
-nnoremap <leader>sf <cmd>Telescope file_browser<cr>
-nnoremap <leader>ss <cmd>Telescope live_grep<cr>
-nnoremap <leader>sb <cmd>Telescope buffers<cr>
+inoremap <silent><expr> <c-space> compe#complete()
+inoremap <silent><expr> <cr>      compe#confirm('<cr>')
 
-nnoremap <leader>nt <cmd>NERDTreeToggle<cr>
-nnoremap <leader>nf <cmd>NERDTreeFind<cr>
-
-inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-
+"{{ Buffers }}
 nnoremap <leader>w <cmd>bd<cr>
+nnoremap <tab> <cmd>bn<cr>
+nnoremap <s-tab> <cmd>bp<cr>
+nnoremap <leader><tab> :Bw<cr>
+nnoremap <leader><s-tab> :Bw!<cr>
+nnoremap <c-t> :tabnew split<cr>
 nnoremap <leader>; <cmd>e ~/.config/nvim/init.vim<cr>
 
 " makes it possible to do cmd up and down to move lines
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-inoremap <C-j> <Esc>:m .+1<CR>==gi
-inoremap <C-k> <Esc>:m .-2<CR>==gi
-vnoremap <C-j> :m '>+1<CR>gv=gv
-vnoremap <C-k> :m '<-2<CR>gv=gv
+nnoremap <C-j> :m .+1<cr>==
+nnoremap <C-k> :m .-2<cr>==
+inoremap <C-j> <Esc>:m .+1<cr>==gi
+inoremap <C-k> <Esc>:m .-2<cr>==gi
+vnoremap <C-j> :m '>+1<cr>gv=gv
+vnoremap <C-k> :m '<-2<cr>gv=gv
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Open terminal inside Vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>tt :new term://zsh<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Splits and Tabbed Files
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set splitbelow splitright
+
+" Remap splits navigation to just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Make adjusing split sizes a bit more friendly
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize +3<CR>
+noremap <silent> <C-Down> :resize -3<CR>
+
+" Change 2 split windows from vert to horiz or horiz to vert
+map <Leader>th <C-w>t<C-w>H
+map <Leader>tk <C-w>t<C-w>K
+
+" Removes pipes | that act as seperators on splits
+set fillchars+=vert:\ 
+
