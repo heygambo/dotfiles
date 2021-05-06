@@ -74,3 +74,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # pyenv
 export PATH="$PATH:$(pyenv root)"
+export PYENV_ROOT=$(pyenv root)
+
+# rust
+source "$HOME/.cargo/env"
