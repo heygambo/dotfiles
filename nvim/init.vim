@@ -34,13 +34,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mhinz/vim-startify'
-Plug 'junegunn/vim-emoji'
+" Plug 'junegunn/vim-emoji'
 " Plug 'bagrat/vim-buffet'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'ap/vim-css-color'
-Plug 'severin-lemaignan/vim-minimap'
+" Plug 'ap/vim-css-color'
+" Plug 'severin-lemaignan/vim-minimap'
 
 "{{ File management }}
 Plug 'nvim-lua/popup.nvim'
@@ -62,7 +62,8 @@ Plug 'dense-analysis/ale', { 'do': 'yarn global add eslint_d' }
 Plug 'elzr/vim-json'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'jparise/vim-graphql'
+" Plug 'jparise/vim-graphql'
+Plug 'j5shi/CommandlineComplete.vim'
 
 call plug#end()
 
@@ -81,7 +82,7 @@ let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 
 " Always show statusline
-set laststatus=2
+" set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'tokyonight',
       \ 'active': {
@@ -137,7 +138,7 @@ hi LspDiagnosticsVirtualTextWarning guifg=orange gui=bold
 hi LspDiagnosticsVirtualTextInformation guifg=yellow gui=bold
 hi LspDiagnosticsVirtualTextHint guifg=green gui=bold
 
-let g:neovide_cursor_vfx_mode = "railgun"
+" let g:neovide_cursor_vfx_mode = "railgun"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
@@ -147,11 +148,11 @@ let g:neovide_cursor_vfx_mode = "railgun"
 map <C-f> :NERDTreeFind<CR>
 map <C-n> :NERDTreeToggle<CR>
 
-let g:NERDTreeDirArrowExpandable = '►'
-let g:NERDTreeDirArrowCollapsible = '▼'
+let g:NERDTreeDirArrowExpandable='►'
+let g:NERDTreeDirArrowCollapsible='▼'
 let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
-let NERDTreeMinimalUI = 1
+let NERDTreeMinimalUI=1
 let g:NERDTreeWinSize=38
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -177,12 +178,12 @@ inoremap <silent><expr> <c-space> compe#complete()
 inoremap <silent><expr> <cr>      compe#confirm('<cr>')
 
 "{{ Buffers }}
-nnoremap <leader>w <cmd>bd<cr>
+nnoremap <leade>w <cmd>bd<cr>
 nnoremap <tab> <cmd>bn<cr>
 nnoremap <s-tab> <cmd>bp<cr>
 nnoremap <leader><tab> :Bw<cr>
 nnoremap <leader><s-tab> :Bw!<cr>
-nnoremap <c-t> :tabnew split<cr>
+" nnoremap <c-t> :tabnew split<cr>
 nnoremap <leader>; <cmd>e ~/.config/nvim/init.vim<cr>
 
 " makes it possible to do cmd up and down to move lines
@@ -227,11 +228,11 @@ set fillchars+=vert:\
 " => vim-emoji
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if emoji#available()
-  let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
-  let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
-  let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
-  let g:gitgutter_sign_modified_removed = emoji#for('collision')
-endif
-
-set completefunc=emoji#complete
+" if emoji#available()
+"   let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+"   let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+"   let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+"   let g:gitgutter_sign_modified_removed = emoji#for('collision')
+" endif
+" 
+" set completefunc=emoji#complete
