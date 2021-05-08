@@ -64,6 +64,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " Plug 'jparise/vim-graphql'
 Plug 'j5shi/CommandlineComplete.vim'
+Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
@@ -153,7 +154,7 @@ let g:NERDTreeDirArrowCollapsible='▼'
 let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
-let g:NERDTreeWinSize=38
+let g:NERDTreeWinSize=70
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Remap Keys
@@ -178,7 +179,7 @@ inoremap <silent><expr> <c-space> compe#complete()
 inoremap <silent><expr> <cr>      compe#confirm('<cr>')
 
 "{{ Buffers }}
-nnoremap <leade>w <cmd>bd<cr>
+nnoremap <leader>w <cmd>bd<cr>
 nnoremap <tab> <cmd>bn<cr>
 nnoremap <s-tab> <cmd>bp<cr>
 nnoremap <leader><tab> :Bw<cr>
@@ -194,6 +195,9 @@ inoremap <C-k> <Esc>:m .-2<cr>==gi
 vnoremap <C-j> :m '>+1<cr>gv=gv
 vnoremap <C-k> :m '<-2<cr>gv=gv
 
+" adds console log with matching word
+" nnoremap <Leader>L "ayiwOconsole.log('<C-R>a:', <C-R>a);<Esc>
+" xnoremap <Leader>L "ayOconsole.log('<C-R>a:', <C-R>a);<Esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Open terminal inside Vim
