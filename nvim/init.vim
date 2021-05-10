@@ -32,7 +32,6 @@ call plug#begin('~/.vim/plugged')
 
 "{{ Look & Feel }}
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mhinz/vim-startify'
 " Plug 'junegunn/vim-emoji'
 " Plug 'bagrat/vim-buffet'
@@ -49,6 +48,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "{{ Language Server / Autocomplete }}
 Plug 'neovim/nvim-lspconfig', { 'do': 'yarn global add typescript typescript-language-server vls' }

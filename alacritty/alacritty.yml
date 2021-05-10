@@ -1,4 +1,6 @@
  font:
-   size: 16
+   normal:
+     family: Hack Nerd Font
+   size: 15
    offset:
      y: 3
