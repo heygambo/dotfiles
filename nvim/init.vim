@@ -229,6 +229,20 @@ map <Leader>tk <C-w>t<C-w>K
 " Removes pipes | that act as seperators on splits
 set fillchars+=vert:\ 
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => no arrow keys!
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
+" inoremap <Up> <Nop>
+" inoremap <Down> <Nop>
+" inoremap <Left> <Nop>
+" inoremap <Right> <Nop>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-emoji
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
