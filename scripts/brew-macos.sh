@@ -12,6 +12,7 @@ brew install terminal-notifier
 brew install itermocil
 brew install mosh
 brew install tmux
+brew install tmuxinator
 brew install m-cli
 
 brew tap jason0x43/homebrew-neovim-nightly
