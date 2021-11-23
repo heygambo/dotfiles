@@ -28,6 +28,7 @@ brew install --cask imagealpha
 brew install --cask imageoptim
 brew install docker-compose
 brew install --cask docker
+brew install buildpacks/tap/pack
 brew install --cask cyberduck
 brew install --cask gitify
 brew install --cask insomnia

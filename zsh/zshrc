@@ -67,3 +67,5 @@ source ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh
 
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
+
+. $(pack completion --shell zsh)
