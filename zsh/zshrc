@@ -65,3 +65,5 @@ MAGIC_ENTER_GIT_COMMAND="clear && git status | lolcat -S 1 -F 0.04"
 [ -f ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh ] && source ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh
 source ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh
 
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
