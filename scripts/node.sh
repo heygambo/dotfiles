@@ -16,4 +16,4 @@ fi
 
 echo "Installing node.js 10..."; echo;
 yes | source $HOME/.zprofile
-yes | nvm install 10
+yes | nvm install 16

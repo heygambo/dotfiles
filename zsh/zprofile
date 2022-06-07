@@ -69,6 +69,9 @@ export NVM_DIR="$HOME/.nvm"
 # linuxbrew
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
+# brew
+export PATH="/opt/homebrew/bin:$PATH"
+
 # pip
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -77,7 +80,7 @@ export PATH="$PATH:$(pyenv root)"
 export PYENV_ROOT=$(pyenv root)
 
 # rust
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 # Golang
 export GOPATH=$HOME/go
