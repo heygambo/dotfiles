@@ -53,7 +53,7 @@ brew install youtube-dl
 # langauges
 brew install rbenv
 brew install ruby-build
-brew install yarn --ignore-dependencies
+# brew install yarn --ignore-dependencies
 brew install virtualenv-init
 brew install pynenv
 
@@ -90,11 +90,11 @@ gcloud -q components update
 gcloud -q components install alpha beta kubectl docker-credential-gcr
 
 brew install awscli
-brew install terraform
-brew install kubernetes-helm
+# brew install terraform
+# brew install kubernetes-helm
 
 brew tap shopify/shopify
-brew install themekit
+# brew install themekit
 
 # Remove outdated versions from the cellar
 brew cleanup
