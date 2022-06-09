@@ -84,7 +84,9 @@ export NVM_DIR="$HOME/.nvm"
 # Fixes history search for my setup
 # https://github.com/sorin-ionescu/prezto/issues/989#issuecomment-150843824
 # bindkey -L | grep '\^R'
-bindkey "^R" history-incremental-pattern-search-backward
+# bindkey "^R" history-incremental-pattern-search-backward
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(atuin init zsh)"
