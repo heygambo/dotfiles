@@ -22,6 +22,7 @@ brew install nss
 brew tap jason0x43/homebrew-neovim-nightly
 brew install --cask neovim-nightly
 
-brew install atuin
+# search history
+brew install hstr
 
 brew cleanup
