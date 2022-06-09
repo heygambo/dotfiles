@@ -79,6 +79,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$(pyenv root)"
 export PYENV_ROOT=$(pyenv root)
 
+# Yarn
+export PATH="$PATH:$(yarn global bin)"
+
 # rust
 # source "$HOME/.cargo/env"
 
