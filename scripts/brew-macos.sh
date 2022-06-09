@@ -19,8 +19,10 @@ brew install m-cli
 brew install mkcert
 brew install nss
 
-brew tap jason0x43/homebrew-neovim-nightly
-brew install --cask neovim-nightly
+# neovim
+brew install --HEAD tree-sitter
+brew install --HEAD luajit
+brew install --HEAD neovim
 
 # search history
 brew install hstr
