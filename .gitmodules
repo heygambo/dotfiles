@@ -1,6 +1,3 @@
-[submodule "submodules/prezto"]
-	path = submodules/prezto
-	url = https://github.com/sorin-ionescu/prezto
 [submodule "submodules/tmux"]
 	path = submodules/tmux
 	url = https://github.com/gpakosz/.tmux
