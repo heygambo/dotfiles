@@ -10,10 +10,6 @@ be installed manually.
 
 The current plan is to use Homebrew on the mac and linuxbrew on linux
 
-### ThinkVim
-
-ThinkVim needs a few requirements. Read the [ThinkVim Readme](https://github.com/hardcoreplayers/ThinkVim)
-
 ## Thanks
 
 ### Aditya Pillai
