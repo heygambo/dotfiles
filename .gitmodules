@@ -4,3 +4,6 @@
 [submodule "submodules/macOS-Defaults"]
 	path = submodules/macOS-Defaults
 	url = https://github.com/kevinSuttle/macOS-Defaults
+[submodule "submodules/prezto"]
+	path = submodules/prezto
+	url = https://github.com/sorin-ionescu/prezto.git
