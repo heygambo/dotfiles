@@ -42,7 +42,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'node' \
   'tmux' \
-  'homebrew' \
+  'homebrew'
 
 # disabled
 # 'autosuggestions' \
