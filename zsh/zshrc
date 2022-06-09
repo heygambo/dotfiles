@@ -73,3 +73,8 @@ export PATH="$HOME/.serverless/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Fixes history search for my setup
+# https://github.com/sorin-ionescu/prezto/issues/989#issuecomment-150843824
+# bindkey -L | grep '\^R'
+bindkey "^R" history-incremental-pattern-search-backward
