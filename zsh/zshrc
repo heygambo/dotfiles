@@ -94,3 +94,8 @@ bindkey "^R" history-incremental-pattern-search-backward
 # setopt histignorespace           # skip cmds w/ leading space from history
 # export HSTR_CONFIG=hicolor       # get more colors
 # bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
+
+# pnpm
+export PNPM_HOME="/Users/gambo/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
