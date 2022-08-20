@@ -96,5 +96,8 @@ brew install awscli
 brew tap shopify/shopify
 # brew install themekit
 
+# short version manpages
+brew install tldr
+
 # Remove outdated versions from the cellar
 brew cleanup
