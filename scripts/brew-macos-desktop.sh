@@ -16,7 +16,7 @@ brew install --cask zoom
 # brew install --cask flickr-uploadr
 brew install --cask nordvpn
 brew install --cask istat-menus
-brew install --cask overkill
+# brew install --cask overkill
 brew install --cask time-out
 
 # dev
