@@ -26,8 +26,8 @@ brew install ripgrep
 brew install bat
 
 # neovim
-brew install --cask neovim-nightly
-brew install neovim-nightly
+# brew install --cask neovim-nightly
+# brew install neovim-nightly
 
 # git flow
 brew install git-flow

@@ -22,7 +22,7 @@ brew install nss
 # neovim
 brew install --HEAD tree-sitter
 brew install --HEAD luajit
-brew install --HEAD neovim
+brew install neovim
 
 # search history
 brew install hstr
