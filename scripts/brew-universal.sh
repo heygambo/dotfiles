@@ -34,6 +34,7 @@ brew install git-flow
 
 # interactive git terminal client
 brew install tig
+brew install lazygit
 
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
