@@ -50,9 +50,6 @@ ln -s -f $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 ln -s -f $HOME/.dotfiles/submodules/tmux/.tmux.conf $HOME/.tmux.conf
 cp $HOME/.dotfiles/submodules/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 
-# symlink thinkvim
-ln -s -f $HOME/.dotfiles/submodules/ThinkVim $HOME/.config/nvim
-
 # Installs rust through rustup
 ./scripts/rustup.sh
 
