@@ -61,3 +61,6 @@ cp $HOME/.dotfiles/submodules/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 
 # Symlinks alacritty config
 ./scripts/alacritty.sh
+
+# Synlinks kitty config
+./scripts/kitty.sh
