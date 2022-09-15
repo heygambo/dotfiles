@@ -18,6 +18,7 @@ brew install --cask nordvpn
 brew install --cask istat-menus
 # brew install --cask overkill
 brew install --cask time-out
+brew install --cask reactangle
 
 # dev
 brew tap homebrew/cask-fonts
