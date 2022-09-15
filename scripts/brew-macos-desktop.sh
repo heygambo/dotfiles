@@ -8,7 +8,7 @@
 # brew install --cask gyazo
 brew install --cask 1password
 # brew install --cask rescuetime
-brew install --cask spotify
+# brew install --cask spotify
 # brew install --cask alfred
 brew install --cask zoom
 # brew install --cask twitch
