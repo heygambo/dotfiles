@@ -65,7 +65,9 @@ sudo chown root $mtrlocation/sbin/mtr
 # Install other useful binaries
 brew install the_silver_searcher
 brew install fzf
-brew install fasd
+
+# brew install fasd # deprecated
+brew install zoxide
 brew install cask ngrok
 
 brew install imagemagick
