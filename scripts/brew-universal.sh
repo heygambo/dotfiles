@@ -93,7 +93,7 @@ brew install awscli
 # brew install terraform
 # brew install kubernetes-helm
 
-brew tap shopify/shopify
+# brew tap shopify/shopify
 # brew install themekit
 
 # short version manpages
