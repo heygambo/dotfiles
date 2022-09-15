@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Creates Alacritty config folder
+# Creates nvim config folder
 mkdir -p .config
 
 # Symlinks config
