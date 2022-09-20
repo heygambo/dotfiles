@@ -10,3 +10,18 @@ vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 nnoremap <leader>i <cmd>:e ~/.config/nvim/init.vim<cr>
 nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
 nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
+
+" Buffers
+nnoremap <leader>w <cmd>bw<cr>
+nnoremap <tab> <cmd>bn<cr>
+nnoremap <s-tab> <cmd>bp<cr>
+nnoremap <leader><tab> :bw<cr>
+nnoremap <leader><s-tab> :bw!<cr>
+
+" Move lines around
+nnoremap <C-j> :m .+1<cr>==
+nnoremap <C-k> :m .-2<cr>==
+inoremap <C-j> <Esc>:m .+1<cr>==gi
+inoremap <C-k> <Esc>:m .-2<cr>==gi
+vnoremap <C-j> :m '>+1<cr>gv=gv
+vnoremap <C-k> :m '<-2<cr>gv=gv

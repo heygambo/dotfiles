@@ -19,10 +19,13 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'voldikss/vim-floaterm'
 
+" Editing
+Plug 'arthurxavierx/vim-caser'
+Plug 'github/copilot.vim'
+
 " Akira's Plugins
-" Plug 'windwp/nvim-autopairs'
 " Plug 'andymass/vim-matchup'
-" Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 Plug 'windwp/nvim-autopairs'
-" Plug 'windwp/nvim-ts-autotag'
+Plug 'windwp/nvim-ts-autotag'
 call plug#end()

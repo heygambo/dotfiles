@@ -17,7 +17,11 @@ nvim_lsp.eslint.setup{
   on_attach = on_attach
 }
 
-nvim_lsp.volar.setup{
+-- nvim_lsp.volar.setup{
+--   on_attach = on_attach
+-- }
+
+nvim_lsp.vuels.setup{
   on_attach = on_attach
 }
 EOF

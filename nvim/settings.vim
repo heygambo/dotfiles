@@ -16,3 +16,4 @@ set completeopt=menu,menuone,noselect
 set ignorecase
 set smartcase
 set nowrap 
+set splitbelow splitright
