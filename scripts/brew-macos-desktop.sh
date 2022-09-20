@@ -39,6 +39,7 @@ brew install --cask sequel-pro
 brew install --cask db-browser-for-sqlite
 brew install --cask tower
 brew install --cask visual-studio-code
+brew install nnn
 # brew install TomAnthony/brews/itermocil
 # mkdir ~/.itermocil
 
