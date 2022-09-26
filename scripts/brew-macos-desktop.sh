@@ -19,6 +19,7 @@ brew install --cask istat-menus
 # brew install --cask overkill
 brew install --cask time-out
 brew install --cask reactangle
+brew install --cask hiddenbar
 
 # dev
 brew tap homebrew/cask-fonts
