@@ -71,6 +71,9 @@ eval "$(rbenv init -)"
 # [ -f ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh ] && source ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh
 [ -f ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh ] && source ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh
 
+# sources nnn
+[ -f ~/.dotfiles/zsh/plugins/nnn.zsh ] && source ~/.dotfiles/zsh/plugins/nnn.zsh
+
 eval "$(zoxide init zsh)"
 
 # Added by serverless binary installer
