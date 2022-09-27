@@ -14,6 +14,6 @@ else
     yes | curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 fi
 
-echo "Installing node.js 10..."; echo;
+echo "Installing node.js 16..."; echo;
 yes | source $HOME/.zprofile
 yes | nvm install 16
