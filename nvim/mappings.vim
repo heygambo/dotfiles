@@ -8,7 +8,9 @@ nnoremap <leader>fd <cmd>:FloatermNew --autoclose=2 --height=0.9 --width=0.9 nnn
 tnoremap <C-c> <cmd>FloatermKill<cr>
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 nnoremap <leader>i <cmd>:e ~/.config/nvim/init.vim<cr>
-nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
+nnoremap lr <cmd>lua vim.lsp.buf.references()<cr>
+nnoremap ld <cmd>lua vim.lsp.buf.definition()<cr>
+nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
 nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
 
 " Buffers
