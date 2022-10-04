@@ -21,6 +21,8 @@ brew install --cask time-out
 brew install --cask reactangle
 # brew install --cask hiddenbar
 brew install --cask bartender
+brew install --cask karabiner-elements
+brew install mos
 
 # dev
 brew tap homebrew/cask-fonts
