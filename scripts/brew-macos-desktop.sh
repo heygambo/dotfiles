@@ -75,8 +75,9 @@ brew install --cask skyfonts
 brew install --cask grammarly
 
 # productivity
-# brew install --cask cheatsheet
-echo "No cask available for vimac: https://vimacapp.com/"
+brew install --cask notion
+brew install --cask notion-enhancer
+brew install --cask shottr
 
 # games
 brew install --cask steam
