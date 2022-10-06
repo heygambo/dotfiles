@@ -87,5 +87,6 @@ export PATH="$PATH:$(yarn global bin)"
 
 # Golang
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:$GOROOT/bin:$GOPATH/bin

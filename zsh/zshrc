@@ -103,6 +103,9 @@ bindkey "^R" history-incremental-pattern-search-backward
 export PNPM_HOME="/Users/gambo/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+# golang
+export GOLANG_HOME="/Users/gambo/go"
+export PATH="$GOLANG_HOME:$PATH"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 # __conda_setup="$('/Users/gambo/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
