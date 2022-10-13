@@ -8,5 +8,6 @@ source $HOME/.config/nvim/plugins/vim-floaterm.vim
 source $HOME/.config/nvim/plugins/nvim-treesitter.vim
 source $HOME/.config/nvim/plugins/vim-telescope.vim
 " source $HOME/.config/nvim/plugins/nvim-cmp.vim
+source $HOME/.config/nvim/plugins/nvim-coc.lua
 source $HOME/.config/nvim/plugins/nvim-autopairs.vim
 source $HOME/.config/nvim/plugins/nvim-copilot.vim

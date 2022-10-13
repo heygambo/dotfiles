@@ -9,17 +9,18 @@ tnoremap <C-c> <cmd>FloatermKill<cr>
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 nnoremap <leader>i <cmd>:e ~/.config/nvim/init.vim<cr>
 nnoremap <leader>m <cmd>:e ~/.config/nvim/mappings.vim<cr>
-nnoremap gr <cmd>lua vim.lsp.buf.references()<cr>
-nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
-nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
-nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
+" nnoremap gr <cmd>lua vim.lsp.buf.references()<cr>
+" nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
+" nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
+" nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
+nmap <leader>e :CocCommand explorer<CR>
 
 " Buffers
 nnoremap <leader>w <cmd>bw<cr>
-nnoremap <tab> <cmd>bn<cr>
-nnoremap <s-tab> <cmd>bp<cr>
-nnoremap <leader><tab> :bw<cr>
-nnoremap <leader><s-tab> :bw!<cr>
+" nnoremap <tab> <cmd>bn<cr>
+" nnoremap <s-tab> <cmd>bp<cr>
+" nnoremap <leader><tab> :bw<cr>
+" nnoremap <leader><s-tab> :bw!<cr>
 
 " Move lines around
 nnoremap <C-j> :m .+1<cr>==
@@ -30,4 +31,4 @@ vnoremap <C-j> :m '>+1<cr>gv=gv
 vnoremap <C-k> :m '<-2<cr>gv=gv
 
 " Coc Explorer
-:nmap <space>e <Cmd>CocCommand explorer<CR>
+:nmap <space>e <Cmd>CocCommand explorer --width=80<CR>
