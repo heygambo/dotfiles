@@ -10,7 +10,7 @@ const rules: KarabinerRules[] = [
       {
         description: "Caps Lock -> Hyper Key",
         from: {
-          key_code: "caps_lock",
+          key_code: "right_command",
         },
         to: [
           {
@@ -27,19 +27,30 @@ const rules: KarabinerRules[] = [
       },
       {
         type: "basic",
-        description: "Disable CMD + Tab to force Hyper Key usage",
         from: {
-          key_code: "tab",
-          modifiers: {
-            mandatory: ["left_command"],
-          },
+          key_code: "caps_lock"
         },
         to: [
           {
-            key_code: "tab",
-          },
-        ],
+            key_code: "left_control"
+          }
+        ]
       },
+      // {
+      //   type: "basic",
+      //   description: "Disable CMD + Tab to force Hyper Key usage",
+      //   from: {
+      //     key_code: "tab",
+      //     modifiers: {
+      //       mandatory: ["left_command"],
+      //     },
+      //   },
+      //   to: [
+      //     {
+      //       key_code: "tab",
+      //     },
+      //   ],
+      // },
       {
         type: "basic",
         description: "Slash -> Hyper Key",
@@ -68,7 +79,6 @@ const rules: KarabinerRules[] = [
       d: app("Discord"),
       s: app("Slack"),
       n: app("Notion"),
-      t: app("Kitty"),
       t: app("Kitty"),
       r: app("Telegram"),
       // "i"Message
@@ -209,6 +219,20 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      h: {
+        to: [
+          {
+            key_code: "illumination_increment",
+          },
+        ],
+      },
+      n: {
+        to: [
+          {
+            key_code: "illumination_decrement",
+          },
+        ],
+      },
       l: {
         to: [
           {
@@ -231,30 +255,30 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      e: {
-        to: [
-          {
-            // Emoji picker
-            key_code: "spacebar",
-            modifiers: ["right_control", "right_command"],
-          },
-        ],
-      },
+      // e: {
+      //   to: [
+      //     {
+      //       // Emoji picker
+      //       key_code: "spacebar",
+      //       modifiers: ["right_control", "right_command"],
+      //     },
+      //   ],
+      // },
       // Turn on Elgato KeyLight
-      y: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 1, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
-      h: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 0, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
+      // y: {
+      //   to: [
+      //     {
+      //       shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 1, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
+      //     },
+      //   ],
+      // },
+      // h: {
+      //   to: [
+      //     {
+      //       shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 0, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
+      //     },
+      //   ],
+      // },
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
