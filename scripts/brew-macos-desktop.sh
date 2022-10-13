@@ -4,22 +4,12 @@
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 # daily
-# brew install --cask dropbox
-# brew install --cask gyazo
 brew install --cask 1password
-# brew install --cask rescuetime
-# brew install --cask spotify
-# brew install --cask alfred
 brew install --cask zoom
-# brew install --cask twitch
-# brew install --cask avira-antivirus
-# brew install --cask flickr-uploadr
 brew install --cask nordvpn
 brew install --cask istat-menus
-# brew install --cask overkill
 brew install --cask time-out
 brew install --cask reactangle
-# brew install --cask hiddenbar
 brew install --cask bartender
 brew install --cask karabiner-elements
 brew install mos
@@ -28,14 +18,8 @@ brew install mos
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 # brew install --cask alacritty
-# brew install --cask iterm2
-brew install --cask imagealpha
-brew install --cask imageoptim
-# brew install docker-compose
+brew install --cask iterm2
 brew install --cask docker
-# brew install buildpacks/tap/pack
-# brew install --cask cyberduck
-# brew install --cask gitify
 brew install --cask insomnia
 brew install --cask postman
 brew install --cask psequel
@@ -44,18 +28,12 @@ brew install --cask db-browser-for-sqlite
 brew install --cask tower
 brew install --cask visual-studio-code
 brew install nnn
-# brew install TomAnthony/brews/itermocil
-# mkdir ~/.itermocil
 
 # networking
 brew install --cask little-snitch
 
-# organize
-# brew install --cask evernote
-
 # social
 brew install --cask discord
-# brew install --cask riot
 brew install --cask signal
 brew install --cask slack
 brew install --cask telegram
@@ -112,3 +90,4 @@ brew install --cask font-fira-code
 # Phosphor
 # Trello
 # Affinity Photo
+# https://www.homerow.app
