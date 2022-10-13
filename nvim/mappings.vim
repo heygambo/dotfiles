@@ -28,3 +28,6 @@ inoremap <C-j> <Esc>:m .+1<cr>==gi
 inoremap <C-k> <Esc>:m .-2<cr>==gi
 vnoremap <C-j> :m '>+1<cr>gv=gv
 vnoremap <C-k> :m '<-2<cr>gv=gv
+
+" Coc Explorer
+:nmap <space>e <Cmd>CocCommand explorer<CR>

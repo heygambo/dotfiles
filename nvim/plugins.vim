@@ -7,11 +7,16 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'unblevable/quick-scope'
 
 " LSP
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'onsails/lspkind.nvim'
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/nvim-cmp'
+" Plug 'onsails/lspkind.nvim'
+
+" COC
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 " Navigation
 Plug 'nvim-lua/popup.nvim'

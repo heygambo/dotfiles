@@ -28,3 +28,6 @@ yes | yarn global add typescript
 
 echo "Install typescript-language-server...";
 yes | yarn global add typescript-language-server
+
+echo "Install dockerfile-language-server-nodejs...";
+yes | yarn global add dockerfile-language-server-nodejs
