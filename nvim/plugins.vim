@@ -22,10 +22,18 @@ Plug 'voldikss/vim-floaterm'
 " Editing
 Plug 'arthurxavierx/vim-caser'
 Plug 'github/copilot.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 " Akira's Plugins
 " Plug 'andymass/vim-matchup'
-Plug 'tpope/vim-surround'
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
+
+" TODO
+" https://github.com/weirongxu/coc-explorer
+" https://github.com/rhysd/clever-f.vim
+" https://github.com/ggandor/leap.nvim
+" https://github.com/christoomey/vim-tmux-navigator
+
 call plug#end()
