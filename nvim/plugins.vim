@@ -38,9 +38,6 @@ Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
 
 " TODO
-" https://github.com/weirongxu/coc-explorer
-" https://github.com/rhysd/clever-f.vim
 " https://github.com/ggandor/leap.nvim
-" https://github.com/christoomey/vim-tmux-navigator
 
 call plug#end()
