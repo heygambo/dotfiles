@@ -20,6 +20,8 @@ nnoremap <leader>w <cmd>bw<cr>
 " nnoremap <s-tab> <cmd>bp<cr>
 " nnoremap <leader><tab> :bw<cr>
 " nnoremap <leader><s-tab> :bw!<cr>
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
 
 " Move lines around
 nnoremap <C-j> :m .+1<cr>==

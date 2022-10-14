@@ -17,3 +17,4 @@ set ignorecase
 set smartcase
 set nowrap 
 set splitbelow splitright
+let g:buftabline_numbers = 1
