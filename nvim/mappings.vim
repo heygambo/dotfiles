@@ -9,6 +9,17 @@ tnoremap <C-c> <cmd>FloatermKill<cr>
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 nnoremap <leader>i <cmd>:e ~/.config/nvim/init.vim<cr>
 nnoremap <leader>m <cmd>:e ~/.config/nvim/mappings.vim<cr>
+
+" https://youtu.be/qZO9A5F6BZs?t=365
+" greatest remap ever
+xnoremap <leader>p "_dP
+" next greatest remap ever: asbjoornHaland
+nnoremap <leader>y "-y
+vnoremap <leader>y "+y
+nmap <leader>Y "+Y
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
 " nnoremap gr <cmd>lua vim.lsp.buf.references()<cr>
 " nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
 " nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
