@@ -17,13 +17,13 @@ Plug 'unblevable/quick-scope'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-
 " Navigation
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'voldikss/vim-floaterm'
 Plug 'rhysd/clever-f.vim'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'ap/vim-buftabline'
 
 " Editing
