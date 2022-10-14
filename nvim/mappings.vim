@@ -13,7 +13,6 @@ nnoremap <leader>m <cmd>:e ~/.config/nvim/mappings.vim<cr>
 " nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
 " nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
 " nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
-nmap <leader>e :CocCommand explorer<CR>
 
 " Buffers
 nnoremap <leader>w <cmd>bw<cr>
@@ -29,6 +28,4 @@ inoremap <C-j> <Esc>:m .+1<cr>==gi
 inoremap <C-k> <Esc>:m .-2<cr>==gi
 vnoremap <C-j> :m '>+1<cr>gv=gv
 vnoremap <C-k> :m '<-2<cr>gv=gv
-
-" Coc Explorer
-:nmap <space>e <Cmd>CocCommand explorer --width=80<CR>
+:nmap <leader>e <Cmd>CocCommand explorer --width=80<CR>
