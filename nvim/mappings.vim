@@ -9,6 +9,10 @@ tnoremap <C-c> <cmd>FloatermKill<cr>
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 nnoremap <leader>i <cmd>:e ~/.config/nvim/init.vim<cr>
 nnoremap <leader>m <cmd>:e ~/.config/nvim/mappings.vim<cr>
+" nnoremap gr <cmd>lua vim.lsp.buf.references()<cr>
+" nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
+" nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
+" nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
 
 " https://youtu.be/qZO9A5F6BZs?t=365
 " greatest remap ever
@@ -20,10 +24,15 @@ nmap <leader>Y "+Y
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
-" nnoremap gr <cmd>lua vim.lsp.buf.references()<cr>
-" nnoremap gd <cmd>lua vim.lsp.buf.definition()<cr>
-" nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<cr>
-" nnoremap K <cmd>lua vim.lsp.buf.hover()<cr>
+" Move to beginning/end of line without taking my fingers off of home row
+nnoremap H ^
+nnoremap L $
+
+" Insert line above cursor and move cursor to that line at correct indent while staying in insert mode
+inoremap <silent><c-o> <esc>O
+
+" This map is to split and then move the focus
+nnoremap <leader>v <C-w>v<C-w>l
 
 " Buffers
 nnoremap <leader>w <cmd>bw<cr>
