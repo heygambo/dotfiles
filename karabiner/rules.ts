@@ -8,7 +8,7 @@ const rules: KarabinerRules[] = [
     description: "Hyper Key (⌃⌥⇧⌘)",
     manipulators: [
       {
-        description: "Caps Lock -> Hyper Key",
+        description: "Caps Lock -> Left Control",
         from: {
           key_code: "right_command",
         },
