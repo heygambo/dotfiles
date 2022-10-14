@@ -1,5 +1,4 @@
 source $HOME/.config/nvim/settings.vim
-source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/theme.vim
 
@@ -11,3 +10,5 @@ source $HOME/.config/nvim/plugins/vim-telescope.vim
 source $HOME/.config/nvim/plugins/nvim-coc.lua
 source $HOME/.config/nvim/plugins/nvim-autopairs.vim
 source $HOME/.config/nvim/plugins/nvim-copilot.vim
+
+source $HOME/.config/nvim/mappings.vim
