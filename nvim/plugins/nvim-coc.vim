@@ -1,3 +1,4 @@
+let g:coc_node_path = "$HOME/.nvm/versions/node/v14.19.3/bin/node"
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
