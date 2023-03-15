@@ -228,10 +228,6 @@ local config = {
         ["<C-N>"] = { ":bnext<CR>", desc = "Next Buffer" },
         ["<C-P>"] = { ":bprev<CR>", desc = "Prev Buffer" }
     },
-    -- i = {
-    --     ['<C-J>'] = { '<cmd>copilot#Accept("\<CR>")', desc = "Accept copilot" }
-    -- im.api.nvim_set_keymap('n', '<F2>', "<Plug>(lcn-rename')", { noremap = true, silent = true });
-    -- },
     t = {
       -- setting a mapping to false will disable it
       -- ["<esc>"] = false,
@@ -258,6 +254,7 @@ local config = {
       { "tpope/vim-commentary" },
       { "tpope/vim-surround" },
       { "rhysd/clever-f.vim" },
+      { "rust-lang/rust.vim" },
       -- {
       --   "ray-x/lsp_signature.nvim",
       --   event = "BufRead",
@@ -347,6 +344,8 @@ local config = {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    local copilot_options = { silent = true, expr = true, script = true }
+    vim.api.nvim_set_keymap("i", "<C-j>", "copilot#Accept(<Tab>)", copilot_options)
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
@@ -361,7 +360,5 @@ local config = {
     -- }
   end,
 }
-
-vim.api.nvim_set_keymap('i', '<C-J>', 'copilot#Accept("<CR>")', {expr=true, silent=true})
 
 return config
