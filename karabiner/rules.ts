@@ -51,24 +51,24 @@ const rules: KarabinerRules[] = [
       //     },
       //   ],
       // },
-      {
-        type: "basic",
-        description: "Slash -> Hyper Key",
-        from: {
-          key_code: "slash",
-        },
-        to: [
-          {
-            key_code: "left_shift",
-            modifiers: ["left_command", "left_control", "left_option"],
-          },
-        ],
-        to_if_alone: [
-          {
-            key_code: "slash",
-          },
-        ],
-      },
+      // {
+      //   type: "basic",
+      //   description: "Slash -> Hyper Key",
+      //   from: {
+      //     key_code: "slash",
+      //   },
+      //   to: [
+      //     {
+      //       key_code: "left_shift",
+      //       modifiers: ["left_command", "left_control", "left_option"],
+      //     },
+      //   ],
+      //   to_if_alone: [
+      //     {
+      //       key_code: "slash",
+      //     },
+      //   ],
+      // },
     ],
   },
   ...createHyperSubLayers({
@@ -79,7 +79,7 @@ const rules: KarabinerRules[] = [
       d: app("Discord"),
       s: app("Slack"),
       n: app("Notion"),
-      t: app("Kitty"),
+      // t: app("Kitty"),
       r: app("Telegram"),
       // "i"Message
       i: app("Messages"),
