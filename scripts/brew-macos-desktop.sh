@@ -27,6 +27,7 @@ brew install --cask sequel-pro
 brew install --cask db-browser-for-sqlite
 brew install --cask tower
 brew install --cask visual-studio-code
+brew install --cask pgadmin
 brew install nnn
 
 # networking

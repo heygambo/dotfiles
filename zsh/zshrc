@@ -84,3 +84,6 @@ export GOLANG_HOME="/Users/gambo/go"
 export PATH="$GOLANG_HOME:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+
+# php
+export PATH="$PATH:/Users/gambo/.composer/vendor/bin"
