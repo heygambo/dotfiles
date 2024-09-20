@@ -27,4 +27,6 @@ brew install neovim
 # search history
 brew install hstr
 
+brew install rga
+
 brew cleanup
